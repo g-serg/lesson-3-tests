@@ -4,9 +4,9 @@ import './PersonalForm.css';
 
 export class PersonalForm extends Component {
   handleChangeForm = event => {
-    const { name, value } = event.target;
+    const target = event.target;
     const { onChangeForm } = this.props;
-    onChangeForm(name, value);
+    onChangeForm(target.name, target.value);
   };
 
   render() {
