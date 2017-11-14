@@ -1,10 +1,9 @@
 import React, { PureComponent } from 'react';
 import './Step.css';
-import './Step.scss';
 
 class Step extends PureComponent {
   handleClick = () => {
-    const { isClickable, number, onClick } = this.props;
+    const { isSelected, isClickable, number, onClick } = this.props;
     isClickable && onClick(number);
   };
 
